@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art gallery</title>
+    <script src="../../additional/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../../additional/bootstrap.min.css">
+    <script src="../../additional/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/cafeTeraceAtNight/serbian.js"></script>
+</head>
+<body>
+    <input type="hidden" id="delo" value="Кафић ноћу">
+    <div class="container-fluid" style="background-color: rgb(16, 16, 16);">
+        <div class="row">
+            <div class="col-sm-12">
+                <header id="header">
+                    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: rgb(16, 16, 16);">
+                        <div class="container-fluid">
+                          
+                            <div class="col-sm-3 col-4">
+                              <a class="navbar-brand" href="index.html"><img src="../../images/logo.png" width="120px"/></a>                            </div>
+                            <div class="col-sm-7 col-4">
+                              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin-left: 32%;">
+                                <span class="navbar-toggler-icon" style="padding-left: 5%;"></span>
+                              </button>
+                              <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                                <ul class="navbar-nav" style="width: 100%;">
+                                  <li class="nav-item meniStavke text-center">
+                                    <a class="nav-link" href="index.html">Почетна</a>
+                                  </li>
+                                  <li class="nav-item active meniStavke text-center">
+                                    <button class="btn dropdown-toggle meniStavke" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 80%; display: block;">
+                                      <a class="nav-link active" href="../../html/serbian/arts.html" style="display: inline; font-size: 22px;">Уметнине</a>
+                                  </button>
+                                  <div class="dropdown-menu text-center meniStavke" aria-labelledby="dropdownMenuButton" style="position: absolute; margin-left: 22%;">
+                                      <div class="text-center meniStavke nav-item"><a class="nav-link" href="../../html/serbian/paintings.html">Слике</a></div>
+                                      <div class="text-center meniStavke nav-item"><a class="nav-link" href="../../html/serbian/sculptures.html">Скулптуре</a></div>
+                                      <div class="text-center meniStavke nav-item"><a class="nav-link" href="../../html/serbian/others.html">Остало</a></div>
+                                  </div>
+                                  </li>
+                                  <li class="nav-item meniStavke text-center">
+                                    <a class="nav-link" href="artists.html">Уметници</a>
+                                  </li>
+                                  <li class="nav-item meniStavke text-center">
+                                    <a class="nav-link" href="myProfile.html">Мој налог</a>
+                                  </li>
+                                  <li class="nav-item meniStavke text-center">
+                                    <a class="nav-link" href="aboutUs.html">О нама</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="col-sm-2 col-4 dropdown">
+                              <button class="btn dropdown-toggle meniStavke" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 80%;">
+                                Језик
+                              </button>
+                              <div class="dropdown-menu text-center meniStavke" aria-labelledby="dropdownMenuButton" style="width: 80%;">
+                                <a class="dropdown-item text-center meniStavke" href="../../html/serbian/cafeTeraceAtNight.html" style="width: 90%;"><img src="../../images/serbianFlag.png" width="15%" style="padding-right: 2%;">Serbian</a>
+                                <a class="dropdown-item text-center meniStavke" href="../../html/english/cafeTeraceAtNight.html" style="width: 90%;"><img src="../../images/gbFlag.png" width="15%" style="padding-right: 2%;">English</a>
+                              </div>
+                            </div>
+                          
+                        </div>
+                      </nav>
+                </header>
+            </div>
+        </div>
+
+        <div class="row" id="content" style="height: fit-content;">
+          <div class="col-sm-12">
+            <ul class="breadcrumb" style="background-color: rgb(16, 16, 16); width: 40%; margin-left: 5%;">
+              <li class="breadcrumb-item"><a href="index.html" style="color: #dda752;">Почетна</a></li>
+              <li class="breadcrumb-item"><a href="arts.html" style="color: #dda752;">Уметнине</a></li>
+              <li class="breadcrumb-item"><a href="paintings.html" style="color: #dda752;">Слике</a></li>
+              <li class="breadcrumb-item"><a href="cafeTeraceAtNight.html" style="color: #dda752;">Кафић ноћу</a></li>
+            </ul>
+          </div>
+          
+          <div class="col-sm-1"></div>
+
+          <div class="col-sm-9" id="content">
+            <h1 class="text-center">Кафић ноћу</h1>
+            <br><hr style="background-color: #dda752;"><br>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card kartica border-dark" style="width: 100%;">
+                        <img class="card-img-top" src="../../images/artworks/paintings/kaficNocu.jpeg" style="width: 100%;">
+                        <div class="card-body telo-kartice">
+                          <p class="card-text">
+                            <table style="font-size: 18px;">
+                              <tr>
+                                <td>Аутор</td><td>Ван Гог</td>
+                              </tr>
+                              <tr>
+                                <td>Процењена вредност дела</td><td>200 000 000$</td>
+                              </tr>
+                              <tr>
+                                <td>Процењена старост дела</td><td>135 година</td>
+                              </tr>
+                            </table>
+                          </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-5" >
+                    <p>"Кафић ноћу" је уљана слика холандског уметника Винсента ван Гога из 1888. Позната је и као "The Cafe Terrace on the Place du Forum", а када је први пут била изложена 1891. године, носила је име "Кафана, увече" ("Café, le soir").
+
+                        <br><br>Ван Гог је средином септембра 1888. насликао "Кафић ноћу" у Арлу у Француској. Слика није потписана, већ је уметник описао и помиње у три слова.
+                        
+                        Посетиоци локације могу да стоје на североисточном углу Place du Forum, где је уметник поставио свој штафелај. Локација је реновирана 1990. и 1991. године како би се реплицирала Ван Гогова слика. <br><br>Погледао је на југ према вештачки осветљеној тераси популарне кафане, као и у наметнуту таму улице која је водила до грађевинске конструкције (лево, није на слици) и, иза ове грађевине, куле некадашња црква која је сада Musée Lapidaire.
+                        
+                        Десно, Ван Гог је показао осветљену радњу и неке гране дрвећа које окружују место, али је изоставио остатке римских споменика одмах поред ове мале радње.</p>
+                        <p>Након што је завршио "Кафић ноћу", Ван Гог је написао писмо својој сестри изражавајући свој ентузијазам:<br>
+
+                            "Прекинуо ме је управо посао који ми је ових дана дало ново осликавање спољашњости једног кафића увече. На тераси су мале фигуре људи који пију. Огроман жути фењер осветљава терасу, фасаду, тротоар, па чак и пројектује светлост преко калдрме улице, која поприма љубичасто-ружичасту нијансу. Забати кућа на улици која води испод плавог неба са звездама су тамноплави или љубичасти, са зеленим дрветом. Сада постоји слика ноћи без црне. Ништа осим прелепе плаве, љубичасте и зелене боје, ау овој околини осветљени трг је обојен бледо сумпорно, лимун зелено. Изузетно уживам у сликању на лицу места ноћу. Некада су цртали, а дању сликали слику са цртежа. Али сматрам да ми одговара да одмах сликам ствар. Истина је да могу узети плаву за зелену у мраку, плаву лила за ружичасту јорговану, пошто не можете јасно да разазнате природу тона. Али то је једини начин да побегнемо од конвенционалне црне ноћи са лошим, бледим и беличастим светлом, док нам у ствари пука свећа сама по себи даје најбогатију жуту и ​​наранџасту боју." <br>
+                            
+                            Он наставља, у овом истом писму, <br>
+                            "Никада ми нисте рекли да ли сте читали "Guy de Maupassant’s Bel-ami" и шта мислите о његовом таленту уопште. Кажем ово зато што је почетак Бел-амија управо опис једне звездане ноћи у Паризу, са осветљеним кафићима на булевару, и то је нешто попут исте теме коју сам управо сада сликао."</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+              <div class="col-sm-5">
+                <br><br>
+                <label id="porukaGreske" style="color:red; display: none;">Морате да се пријавите на страници Мој профил.</label>
+                <textarea rows="5" cols="50" style="margin-left: 2%;" placeholder="Коментар за уметника..." id="sadrzajKomentara"></textarea>
+                <button class="btn btn-outline-custom kartica-dugme" style="margin-left: 2%;" id="objaviKomentar">Објави коментар</button><br><br><br>
+                <input type="number" style="margin-left: 2%; width: 55%; margin-bottom: 8px;" placeholder="Унесите Вашу понуду за уметнину..." id="sadrzajPonude"/><br>
+                <button class="btn btn-outline-custom kartica-dugme" style="margin-left: 2%;" id="potvrdiPonudu">Потврди понуду</button><br><br>
+              </div>
+              <div class="col-sm-7">
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="komentar">Коментари</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="ponuda">Понуде</a>
+                  </li>
+                </ul>
+                <div id="komentari">
+                  <!--
+                  <div class="komentar">
+                    <h4>Sofija Markovic:</h4>
+                    <p>Prelepo delo! Svaka cast za umetnika :***</p>
+                  </div>
+                  <div class="komentar">
+                    <h4>Sofija Markovic:</h4>
+                    <p>Prelepo delo! Svaka cast za umetnika :***</p>
+                  </div>
+                  <div class="komentar">
+                    <h4>Sofija Markovic:</h4>
+                    <p>Prelepo delo! Svaka cast za umetnika :***</p>
+                  </div>
+                  -->
+              </div>
+              <div id="ponude">
+                <!--
+                <div class="komentar">
+                  <h4>Sofija Markovic:</h4>
+                  <p>225 000 000$</p>
+                </div>
+                <div class="komentar">
+                  <h4>Sofija Markovic:</h4>
+                  <p>500 000 000$</p>
+                </div>
+                <div class="komentar">
+                  <h4>Sofija Markovic:</h4>
+                  <p>800 000 000$</p>
+                </div>
+                -->
+            </div>
+              </div>
+          </div>
+          </div>
+          <div class="col-sm-2">
+        </div>
+        </div>
+        <div class="row">
+          <footer class="footer text-light fixed-bottom" style="background-color: rgb(16, 16, 16); padding-top: 10px;">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <p class="meniStavke" style="font-size: 17px;">&copy; Copyright 2023, Петар и Софија Марковић, Одсек за софтверско инжењерство Електротехничког факултета
+                    Универзитета у Београду</p>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+    </div>
+</body>
+</html>

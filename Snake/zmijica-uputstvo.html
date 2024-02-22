@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zmijica</title>
+    <link href="zmijica dodatno/bootstrap.min.css" rel="stylesheet">
+    <script src="zmijica dodatno/bootstrap.bundle.min.js"></script>
+    <script src="zmijica dodatno/jquery-3.7.0.min.js"></script>
+    <script src="zmijica dodatno/pocetna.js"></script>
+    <link href="zmijica dodatno/pocetna.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container-fluid">
+        <h1>Zmijica</h1>
+        <hr>
+        <p>U igri „Zmijica“ igrač koristi tastere sa strelicama da pomera zmiju po tabli sa poljima. Kako zmija
+            dolazi u dodir sa hranom, ona je jede i time raste za jedan članak. Igra se završava kada se zmija
+            sudari sa ivicama ekrana ili sa sobom. Cilj igre je da zmija postane što veća pre nego što se to
+            dogodi.
+        </p>
+        <hr>
+        <div class="container-fluid">
+                <h2>Velicina table:</h2>
+                <span><input type="radio" name="velicina" id="mala" value="15">Mala</span>
+                <span><input type="radio" name="velicina" id="srednja" value="21"> Srednja</span>
+                <span><input type="radio" name="velicina" id="velika" value="25"> Velika</span>
+                <br><br>
+                <h2>Nivo igre:</h2>
+                <span><input type="radio" name="nivo" id="lako" value="400"> Lako</span>
+                <span><input type="radio" name="nivo" id="srednje" value="300"> Srednje</span>
+                <span><input type="radio" name="nivo" id="tesko" value="200"> Teško</span>
+                <br><br>
+                <span><button id="igra" class="btn btn-outline-light" style="font-size: 20px;">Igraj igru</button></span>
+                <span><button id="rezultati" class="btn btn-outline-light" style="font-size: 20px;">Rezultati</button></span>
+        </div>
+
+    </div>
+</body>
+</html>

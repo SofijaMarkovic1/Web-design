@@ -1,0 +1,38 @@
+body{
+    background-color: #1c2e4a;
+    color: wheat;
+    /*font-family: 'Courier New', Courier, monospace;*/
+    /*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 5%;
+    font-size: 22px;
+    text-align: center;
+}
+hr{
+    height: 10px;
+}
+h1{
+    font-size: 60px;
+}
+h2{
+    font-size: 30px;
+}
+
+span{
+    margin : 5%;
+}
+input[type="radio"]{
+    margin-right: 8px;
+}
+
+.navyText{
+    color: #1c2e4a !important;
+    font-weight: bolder;
+    height: 50px;
+}
+.neparni{
+    background-color: #f9ebd1 !important;
+}
+.parni{
+    background-color: #fbf2e1 !important;
+}

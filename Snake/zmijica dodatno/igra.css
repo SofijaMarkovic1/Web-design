@@ -1,0 +1,40 @@
+body{
+    background-color: #1c2e4a;
+    color: wheat;
+    /*font-family: 'Courier New', Courier, monospace;*/
+    /*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 2%;
+    font-size: 20px;
+    text-align: center;
+}
+label{
+    margin: 5px;
+}
+span{
+    margin: 15px;
+}
+table{
+    border: 2px solid #243755;
+}
+table tr td{
+    height: 35px;
+    width: 35px;
+    border: 2px solid #243755;
+}
+#divT{
+    align-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.parno{
+    background-color: #243755;
+}
+.neparno{
+    background-color: #1c2e4a;
+}
+.centar{
+    align-items: center;
+}

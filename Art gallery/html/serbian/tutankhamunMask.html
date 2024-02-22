@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art gallery</title>
+    <script src="../../additional/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../../additional/bootstrap.min.css">
+    <script src="../../additional/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/tutankhamunMask/serbian.js"></script>
+</head>
+<body>
+    <input type="hidden" id="delo" value="Тутанкамонова маска">
+    <div class="container-fluid" style="background-color: rgb(16, 16, 16);">
+        <div class="row">
+            <div class="col-sm-12">
+                <header id="header">
+                    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: rgb(16, 16, 16);">
+                        <div class="container-fluid">
+                          
+                            <div class="col-sm-3 col-4">
+                              <a class="navbar-brand" href="index.html"><img src="../../images/logo.png" width="120px"/></a>                            </div>
+                            <div class="col-sm-7 col-4">
+                              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin-left: 32%;">
+                                <span class="navbar-toggler-icon" style="padding-left: 5%;"></span>
+                              </button>
+                              <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                                <ul class="navbar-nav" style="width: 100%;">
+                                  <li class="nav-item meniStavke text-center">
+                                    <a class="nav-link" href="index.html">Почетна</a>
+                                  </li>
+                                  <li class="nav-item active meniStavke text-center">
+                                    <button class="btn dropdown-toggle meniStavke" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 80%; display: block;">
+                                      <a class="nav-link active" href="../../html/serbian/arts.html" style="display: inline; font-size: 22px;">Уметнине</a>
+                                  </button>
+                                  <div class="dropdown-menu text-center meniStavke" aria-labelledby="dropdownMenuButton" style="position: absolute; margin-left: 22%;">
+                                      <div class="text-center meniStavke nav-item"><a class="nav-link" href="../../html/serbian/paintings.html">Слике</a></div>
+                                      <div class="text-center meniStavke nav-item"><a class="nav-link" href="../../html/serbian/sculptures.html">Скулптуре</a></div>
+                                      <div class="text-center meniStavke nav-item"><a class="nav-link" href="../../html/serbian/others.html">Остало</a></div>
+                                  </div>
+                                  </li>
+                                  <li class="nav-item meniStavke text-center">
+                                    <a class="nav-link" href="artists.html">Уметници</a>
+                                  </li>
+                                  <li class="nav-item meniStavke text-center">
+                                    <a class="nav-link" href="myProfile.html">Мој налог</a>
+                                  </li>
+                                  <li class="nav-item meniStavke text-center">
+                                    <a class="nav-link" href="aboutUs.html">О нама</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="col-sm-2 col-4 dropdown">
+                              <button class="btn dropdown-toggle meniStavke" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 80%;">
+                                Језик
+                              </button>
+                              <div class="dropdown-menu text-center meniStavke" aria-labelledby="dropdownMenuButton" style="width: 80%;">
+                                <a class="dropdown-item text-center meniStavke" href="../../html/serbian/tutankhamunMask.html" style="width: 90%;"><img src="../../images/serbianFlag.png" width="15%" style="padding-right: 2%;">Serbian</a>
+                                <a class="dropdown-item text-center meniStavke" href="../../html/english/tutankhamunMask.html" style="width: 90%;"><img src="../../images/gbFlag.png" width="15%" style="padding-right: 2%;">English</a>
+                              </div>
+                            </div>
+                          
+                        </div>
+                      </nav>
+                </header>
+            </div>
+        </div>
+
+        <div class="row" id="content" style="height: fit-content;">
+          <div class="col-sm-12">
+            <ul class="breadcrumb" style="background-color: rgb(16, 16, 16); width: 40%; margin-left: 5%;">
+              <li class="breadcrumb-item"><a href="index.html" style="color: #dda752;">Почетна</a></li>
+              <li class="breadcrumb-item"><a href="arts.html" style="color: #dda752;">Уметнине</a></li>
+              <li class="breadcrumb-item"><a href="others.html" style="color: #dda752;">Остало</a></li>
+              <li class="breadcrumb-item"><a href="tutankhamunMask.html" style="color: #dda752;">Тутанкамонова маска</a></li>
+            </ul>
+          </div>
+          
+          <div class="col-sm-1"></div>
+
+          <div class="col-sm-9" id="content">
+            <h1 class="text-center">Тутанкамонова маска</h1>
+            <br><hr style="background-color: #dda752;"><br>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card kartica border-dark" style="width: 100%;">
+                        <img class="card-img-top" src="../../images/artworks/others/tutankhamunMask.jpg" style="width: 100%;">
+                        <div class="card-body telo-kartice">
+                          <p class="card-text">
+                            <table style="font-size: 18px;">
+                              <tr>
+                                <td>Аутор</td><td>непознат</td>
+                              </tr>
+                              <tr>
+                                <td>Процењена вредност дела</td><td>200 000 000$</td>
+                              </tr>
+                              <tr>
+                                <td>Процењена старост дела</td><td>3250 годинe</td>
+                              </tr>
+                            </table>
+                          </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-5" >
+                    <br><br>
+                    <p>Тутанкамонова маска је златна погребна маска староегипатског фараона Тутанкамона из 18. династије (владао 1334–1325 пне). Након што је био закопан више од 3.000 година, Хауард Картер га је ископао 1925. из гробнице КВ62 у Долини краљева и сада се налази у Египатском музеју у Каиру.[4] Посмртна маска је једно од најпознатијих уметничких дела на свету и истакнути симбол старог Египта.
+
+                        <br><br>Попут Озириса, египатског бога загробног живота, висок је 54 центиметра (21,3 ин), тежак је преко 10 килограма (22 лб) или 321,5 трој унци и украшен је полудрагим камењем. Древна чаролија из Књиге мртвих исписана је хијероглифима на раменима маске. Маска је морала да буде рестаурирана 2015. након што јој је исплетена брада од 2,5 килограма (5,5 фунти) отпала и радници музеја су је на брзину залепили.</p>
+                        <p>Према египтологу Николасу Ривсу, маска "није само суштинска слика из Тутанкамонове гробнице, она је можда и најпознатији предмет из самог древног Египта."[5] Од 2001. године, неки египтолози су сугерисали да је можда првобитно била и била. намењен краљици Нефернеферуатен.</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+              <div class="col-sm-5">
+                <label id="porukaGreske" style="color:red; display: none;">Морате да се пријавите на страници Мој профил.</label>
+                <br><br><textarea rows="5" cols="50" style="margin-left: 2%;" placeholder="Коментар за уметника..." id="sadrzajKomentara"></textarea>
+                <button class="btn btn-outline-custom kartica-dugme" style="margin-left: 2%;" id="objaviKomentar">Објави коментар</button><br><br><br>
+                <input type="number" style="margin-left: 2%; width: 55%; margin-bottom: 8px;" placeholder="Унесите Вашу понуду за уметнину..." id="sadrzajPonude"/><br>
+                <button class="btn btn-outline-custom kartica-dugme" style="margin-left: 2%;" id="potvrdiPonudu">Потврди понуду</button><br><br>
+              </div>
+              <div class="col-sm-7">
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="komentar">Коментари</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="ponuda">Понуде</a>
+                  </li>
+                </ul>
+                <div id="komentari">
+                  <!--
+                  <div class="komentar">
+                    <h4>Sofija Markovic:</h4>
+                    <p>Prelepo delo! Svaka cast za umetnika :***</p>
+                  </div>
+                  <div class="komentar">
+                    <h4>Sofija Markovic:</h4>
+                    <p>Prelepo delo! Svaka cast za umetnika :***</p>
+                  </div>
+                  <div class="komentar">
+                    <h4>Sofija Markovic:</h4>
+                    <p>Prelepo delo! Svaka cast za umetnika :***</p>
+                  </div>-->
+                </div>
+                <div id="ponude">
+                  <!--
+                  <p id="nemaPonuda" style="color: red; display: none;">Нема понуда.</p>
+                  <div class="komentar">
+                      <h4>Дело: Кафић ноћу</h4>
+                      <p class="paragrafKomentar">225 000 000$</p>
+                    </div>
+                    <div class="komentar">
+                      <h4>Дело: Давид</h4>
+                      <p>500 000 000$</p>
+                    </div>
+                    <div class="komentar">
+                      <h4>Дело: Тутанкамонова маска</h4>
+                      <p>800 000 000$</p>
+                  </div>-->
+                </div>
+              </div>
+          </div>
+          </div>
+          <div class="col-sm-2">
+        </div>
+        </div>
+        <div class="row">
+          <footer class="footer text-light fixed-bottom" style="background-color: rgb(16, 16, 16); padding-top: 10px;">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <p class="meniStavke" style="font-size: 17px;">&copy; Copyright 2023, Петар и Софија Марковић, Одсек за софтверско инжењерство Електротехничког факултета
+                    Универзитета у Београду</p>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+    </div>
+</body>
+</html>

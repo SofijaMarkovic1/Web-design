@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art gallery</title>
+    <script src="../../additional/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../../additional/bootstrap.min.css">
+    <script src="../../additional/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body style="background-color: rgb(16, 16, 16);;">
+    <div class="container-fluid" style="background-color: rgb(16, 16, 16);">
+        <div class="row">
+            <div class="col-sm-12">
+                <header id="header">
+                    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: rgb(16, 16, 16);">
+                        <div class="container-fluid">
+                          
+                            <div class="col-sm-3 col-4">
+                              <a class="navbar-brand" href="index.html"><img src="../../images/logo.png" width="120px"/></a>
+                            </div>
+                            <div class="col-sm-7 col-4">
+                              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin-left: 32%;">
+                                <span class="navbar-toggler-icon" style="padding-left: 5%;"></span>
+                              </button>
+                              <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                                <ul class="navbar-nav" style="width: 100%;">
+                                  <li class="nav-item active meniStavke text-center">
+                                    <a class="nav-link" href="index.html">Почетна</a>
+                                  </li>
+                                  <li class="nav-item meniStavke text-center">
+                                    <button class="btn dropdown-toggle meniStavke" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 80%; display: block;">
+                                      <a class="nav-link" href="../../html/serbian/arts.html" style="display: inline; font-size: 22px;">Уметнине</a>
+                                  </button>
+                                  <div class="dropdown-menu text-center meniStavke" aria-labelledby="dropdownMenuButton" style="position: absolute; margin-left: 22%;">
+                                      <div class="text-center meniStavke nav-item"><a class="nav-link" href="../../html/serbian/paintings.html">Слике</a></div>
+                                      <div class="text-center meniStavke nav-item"><a class="nav-link" href="../../html/serbian/sculptures.html">Скулптуре</a></div>
+                                      <div class="text-center meniStavke nav-item"><a class="nav-link" href="../../html/serbian/others.html">Остало</a></div>
+                                  </div>
+                                  </li>
+                                  <li class="nav-item meniStavke text-center">
+                                    <a class="nav-link" href="artists.html">Уметници</a>
+                                  </li>
+                                  <li class="nav-item meniStavke text-center">
+                                    <a class="nav-link" href="myProfile.html">Мој налог</a>
+                                  </li>
+                                  <li class="nav-item meniStavke text-center">
+                                    <a class="nav-link" href="aboutUs.html">О нама</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="col-sm-2 col-4 dropdown">
+                              <button class="btn dropdown-toggle meniStavke" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 80%;">
+                                Језик
+                              </button>
+                              <div class="dropdown-menu text-center meniStavke" aria-labelledby="dropdownMenuButton" style="width: 80%;">
+                                <a class="dropdown-item text-center meniStavke" href="../../html/serbian/index.html" style="width: 90%;"><img src="../../images/serbianFlag.png" width="15%" style="padding-right: 2%;">Serbian</a>
+                                <a class="dropdown-item text-center meniStavke" href="../../html/english/index.html" style="width: 90%;"><img src="../../images/gbFlag.png" width="15%" style="padding-right: 2%;">English</a>
+                              </div>
+                            </div>
+                          
+                        </div>
+                      </nav>
+                </header>
+            </div>
+        </div>
+        <div class="row" id="content">
+          <div class="col-sm-12">
+            
+            <div id="carousel" class="carousel slide" data-ride="carousel" style="margin-top: 2%; margin-bottom: 5%;">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" style="margin-top: 30px;"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1" style="margin-top: 30px;"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2" style="margin-top: 30px;"></li>
+              </ol>
+              <div class="carousel-inner" style="padding-left: 5%; padding-right: 5%; padding-top: 2%; padding-bottom: 2%;">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="../../images/slika1.jpg" alt="First slide" style="height: 800px;">
+                  <div class="carousel-caption d-none d-md-block" style="color: rgb(255, 255, 255); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;background-color: rgb(0, 0, 0); padding: 5px; opacity:30%;">
+                    <h5>Тајна вечера</h5>
+                    <p>"Тајна вечера" је позната слика коју је насликао италијански ренесансни мајстор Леонардо да Винчи. Слика приказује последњу вечеру коју је Исус Христ имао са својим апостолима пре него што је био издан.
+
+                      Слика је изузетно иконична и има велики историјски и религиозни значај. Исус је приказан у средишту слике, седи за столом окружен дванаесторицом апостола. Леонардо је мајсторски приказао различите изразе лица апостола, хватајући њихове реакције на Исусове речи да ће један од њих издати. Ова драматична сцена је препознатљива и фасцинантна, привлачећи пажњу посматрача и изазивајући разна тумачења.
+                      
+                      Слика је насликана техником фреске, која се састоји од наноса боје на влажан малтер. Међутим, фреска је током времена претрпела оштећења и рестаурације, па данас оригинално стање слике није потпуно очувано.
+                      
+                      "Тајна вечера" је постала симбол хришћанства и једно од најпознатијих дела Леонарда да Винчија. Њена уметничка вредност, емотивна снага и мистериозна атмосфера и данас интригирају и надахњују посматраче широм света.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="../../images/slika2.webp" alt="Second slide" style="height: 800px;">
+                  <div class="carousel-caption d-none d-md-block" style="color: rgb(255, 255, 255); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;background-color: rgb(0, 0, 0); padding: 5px; opacity:30%;">
+                    <h5>Упорност сећања</h5>
+                    <p>Приказујући суштину надреализма, легендарно дело Салвадора Далија, 'Упорност сећања' приказује свет из 
+
+                      снова у којем се време чини да се топи. Са топљењем сатова преко апстрактних пејзажа, ово енигматично ремек-дело 
+
+                      изазива нашу перцепцију стварности и позива нас да размишљамо о природи времена и сећања.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="../../images/slika3.webp" alt="Third slide" style="height: 800px;">
+                  <div class="carousel-caption d-none d-md-block" style="color: rgb(255, 255, 255); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;background-color: rgb(0, 0, 0); padding: 5px; opacity:50%;">
+                    <h5>Звездана ноћ</h5>
+                    <p>"Звездана ноћ" је једно од најпознатијих и најпрепознатљивијих уметничких дела холандског постимпресионистичког сликара Винсента ван Гога.
+                      
+                      Насликана 1889. године, ова слика приказује мирно ноћно небо испуњено вртложним, живописним звездама, младим месецом и малим селом на дну.
+                       
+                      Ван Гогове карактеристичне изражајне потезе четком стварају осећај кретања и енергије на небу, док тамно чемпресово дрво у првом плану додаје контрастни елемент.
+                      
+                      Слика је позната по богатим бојама, посебно дубоким плавим и жутим тоновима који доминирају композицијом.
+                      
+                      "Звездана ноћ" није само приказ физичког места, већ и евокативно приказивање уметникових емоција и његовог јединственог погледа на лепоту природе.</p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <footer class="footer text-light fixed-bottom" style="background-color: rgb(16, 16, 16); padding-top: 10px;">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <p class="meniStavke" style="font-size: 17px;">&copy; Copyright 2023, Петар и Софија Марковић, Одсек за софтверско инжењерство Електротехничког факултета
+                    Универзитета у Београду</p>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+    </div>
+</body>
+</html>

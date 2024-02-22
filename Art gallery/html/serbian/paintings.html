@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art gallery</title>
+    <script src="../../additional/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../../additional/bootstrap.min.css">
+    <script src="../../additional/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/paintings/serbian.js"></script>
+</head>
+<body>
+    <div class="container-fluid" style="background-color: rgb(16, 16, 16);">
+        <div class="row">
+            <div class="col-sm-12">
+                <header id="header">
+                    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: rgb(16, 16, 16);">
+                        <div class="container-fluid">
+                          
+                            <div class="col-sm-3 col-4">
+                              <a class="navbar-brand" href="index.html"><img src="../../images/logo.png" width="120px"/></a>                            </div>
+                            <div class="col-sm-7 col-4">
+                              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin-left: 32%;">
+                                <span class="navbar-toggler-icon" style="padding-left: 5%;"></span>
+                              </button>
+                              <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                                <ul class="navbar-nav" style="width: 100%;">
+                                  <li class="nav-item meniStavke text-center">
+                                    <a class="nav-link" href="index.html">Почетна</a>
+                                  </li>
+                                  <li class="nav-item active meniStavke text-center">
+                                    <button class="btn dropdown-toggle meniStavke" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 80%; display: block;">
+                                      <a class="nav-link active" href="../../html/serbian/arts.html" style="display: inline; font-size: 22px;">Уметнине</a>
+                                  </button>
+                                  <div class="dropdown-menu text-center meniStavke" aria-labelledby="dropdownMenuButton" style="position: absolute; margin-left: 22%;">
+                                      <div class="text-center meniStavke nav-item"><a class="nav-link" href="../../html/serbian/paintings.html">Слике</a></div>
+                                      <div class="text-center meniStavke nav-item"><a class="nav-link" href="../../html/serbian/sculptures.html">Скулптуре</a></div>
+                                      <div class="text-center meniStavke nav-item"><a class="nav-link" href="../../html/serbian/others.html">Остало</a></div>
+                                  </div>
+                                  </li>
+                                  <li class="nav-item meniStavke text-center">
+                                    <a class="nav-link" href="artists.html">Уметници</a>
+                                  </li>
+                                  <li class="nav-item meniStavke text-center">
+                                    <a class="nav-link" href="myProfile.html">Мој налог</a>
+                                  </li>
+                                  <li class="nav-item meniStavke text-center">
+                                    <a class="nav-link" href="aboutUs.html">О нама</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="col-sm-2 col-4 dropdown">
+                              <button class="btn dropdown-toggle meniStavke" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 80%;">
+                                Језик
+                              </button>
+                              <div class="dropdown-menu text-center meniStavke" aria-labelledby="dropdownMenuButton" style="width: 80%;">
+                                <a class="dropdown-item text-center meniStavke" href="../../html/serbian/paintings.html" style="width: 90%;"><img src="../../images/serbianFlag.png" width="15%" style="padding-right: 2%;">Serbian</a>
+                                <a class="dropdown-item text-center meniStavke" href="../../html/english/paintings.html" style="width: 90%;"><img src="../../images/gbFlag.png" width="15%" style="padding-right: 2%;">English</a>
+                              </div>
+                            </div>
+                          
+                        </div>
+                      </nav>
+                </header>
+            </div>
+        </div>
+
+        <div class="row" id="content" style="height: fit-content;">
+          <div class="col-sm-12">
+            <ul class="breadcrumb" style="background-color: rgb(16, 16, 16); width: 40%; margin-left: 5%;">
+              <li class="breadcrumb-item"><a href="index.html" style="color: #dda752;">Почетна</a></li>
+              <li class="breadcrumb-item"><a href="arts.html" style="color: #dda752;">Уметнине</a></li>
+              <li class="breadcrumb-item"><a href="paintings.html" style="color: #dda752;">Слике</a></li>
+            </ul>
+          </div>
+          
+          <div class="col-sm-1">
+          </div>
+
+          <div class="col-sm-10">
+            <div class="row">
+              <dic class="col-sm-3 col-3"></dic>
+              <dic class="col-sm-6 col-6" style="padding-left: 3%; padding-right: 3%;">
+                <select class="form-control" style="display: inline; margin-right: 5%;" id="select">
+                  <option>Изаберите опцију</option>
+                  <option value="1">Сортирај по називу уметнине (A-Ш)</option>
+                  <option value="2">Сортирај по називу уметнине (Ш-А)</option>
+                  <option value="3">Сортирај по називу уметника (A-Ш)</option>
+                  <option value="4">Сортирај по називу уметника (Ш-А)</option>
+                </select>
+                <button class="btn btn-outline-light" style="display: inline;" id="sortiraj">Сортирај</button><br><br>
+                <input type="text" id="naziv" style="width: 60%;  margin-right: 5%; display: inline;" placeholder="Назив уметнине..."/> <button class="btn btn-outline-light" style="display: inline;" id="pretraga">Претражи</button><br>
+              </dic>
+              <dic class="col-sm-3 col-3"></dic>
+            </div>
+            <div id="dela">
+              <!--
+            
+            <div class="card kartica border-dark">
+              <img class="card-img-top" src="../../images/artworks/paintings/cafeTeraceAtNight.JPG">
+              <div class="card-body telo-kartice">
+                <a href="cafeTeraceAtNight.html"><h4 class="card-title">Кафић ноћу</h4></a>
+              </div>
+          </div>
+
+          <div class="card kartica border-dark">
+              <img class="card-img-top" src="../../images/artworks/paintings/sunflowers.jpg">
+              <div class="card-body telo-kartice">
+                <a href="cafeTeraceAtNight.html"><h4 class="card-title">Сунцокрети</h4></a>
+              </div>
+          </div>
+
+          <div class="card kartica border-dark">
+              <img class="card-img-top" src="../../images/artworks/paintings/vanGoghSelfPortrait.jpeg">
+              <div class="card-body telo-kartice">
+                <a href="cafeTeraceAtNight.html"><h4 class="card-title">Винсент ван Гог - Аутопортрет</h4></a>
+              </div>
+          </div>
+
+          <div class="card kartica border-dark">
+              <img class="card-img-top" src="../../images/artworks/paintings/flowers.PNG">
+              <div class="card-body telo-kartice">
+                <a href="cafeTeraceAtNight.html"><h4 class="card-title">Цвеће</h4></a>
+              </div>
+          </div>
+
+
+          <div class="card kartica border-dark">
+              <img class="card-img-top" src="../../images/artworks/paintings/desert.jpg">
+              <div class="card-body telo-kartice">
+                <a href="cafeTeraceAtNight.html"><h4 class="card-title">Пустиња</h4></a>
+              </div>
+          </div>
+
+          <div class="card kartica border-dark">
+              <img class="card-img-top" src="../../images/artworks/paintings/livingOnTheMoon.jpeg">
+              <div class="card-body telo-kartice">
+                <a href="cafeTeraceAtNight.html"><h4 class="card-title">Живот на месецу</h4></a>
+              </div>
+          </div>
+
+
+          <div class="card kartica border-dark">
+              <img class="card-img-top" src="../../images/artworks/paintings/girlBeforeAMirror.jpeg">
+              <div class="card-body telo-kartice">
+                <a href="cafeTeraceAtNight.html"><h4 class="card-title">Девојка пред огледалом</h4></a>
+              </div>
+          </div>
+
+          <div class="card kartica border-dark">
+              <img class="card-img-top" src="../../images/artworks/paintings/leReve.jpeg">
+              <div class="card-body telo-kartice">
+                <a href="cafeTeraceAtNight.html"><h4 class="card-title">Сан</h4></a>
+              </div>
+          </div>
+
+          <div class="card kartica border-dark">
+              <img class="card-img-top" src="../../images/artworks/paintings/theWeepingWoman.jpeg">
+              <div class="card-body telo-kartice">
+                <a href="cafeTeraceAtNight.html"><h4 class="card-title">Ожалошћена жена</h4></a>
+              </div>
+          </div>
+
+          
+          
+          <div class="card kartica border-dark">
+              <img class="card-img-top" src="../../images/artworks/paintings/monaLisa.jpg">
+              <div class="card-body telo-kartice">
+                <a href="cafeTeraceAtNight.html"><h4 class="card-title">Мона Лиза</h4></a>
+              </div>
+          </div>
+
+          <div class="card kartica border-dark">
+              <img class="card-img-top" src="../../images/artworks/paintings/salvatorMundi.jpeg">
+              <div class="card-body telo-kartice">
+                <a href="cafeTeraceAtNight.html"><h4 class="card-title">Спаситељ света</h4></a>
+              </div>
+          </div>
+
+          <div class="card kartica border-dark">
+              <img class="card-img-top" src="../../images/artworks/paintings/vitruvianMan.jpeg">
+              <div class="card-body telo-kartice">
+                <a href="cafeTeraceAtNight.html"><h4 class="card-title">Витрувијански човек</h4></a>
+              </div>
+          </div>
+              -->
+            </div>
+            
+          </div>
+          <div class="col-sm-1">
+        </div>
+        </div>
+        <div class="row">
+          <footer class="footer text-light fixed-bottom" style="background-color: rgb(16, 16, 16); padding-top: 10px;">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <p class="meniStavke" style="font-size: 17px;">&copy; Copyright 2023, Петар и Софија Марковић, Одсек за софтверско инжењерство Електротехничког факултета
+                    Универзитета у Београду</p>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+    </div>
+</body>
+</html>

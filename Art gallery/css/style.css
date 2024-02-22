@@ -1,0 +1,144 @@
+#noPaddingAndMargine{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.fontSettings{
+    font-size: 30px;
+}
+.meniStavke{
+    margin-left: 3%; 
+    margin-right: 3%; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 22px;
+    background-color: rgb(16, 16, 16);
+    color: white;
+}
+#navbarNav{
+    font-size: 22px; 
+    padding-left: 3%;
+}
+
+#dropdownMenuButton{
+    background-color: rgb(16, 16, 16);
+    color: white;
+    font-size: 20px; 
+}
+
+#content{
+    padding-top: 2%;
+    padding-bottom: 5%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    color: white;
+}
+
+.btn-outline-custom {
+    border-color: #616161; /* Replace #ff0000 with the desired color */
+  }
+
+.kartica{
+    display: inline-flex;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 40%;
+    background-color: rgb(16, 16, 16);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.telo-kartice{
+    color:#616161;
+}
+
+.kartica-dugme{
+    background: transparent;
+     color: #616161;
+}
+
+/* Bootstrap classes */
+.form-control {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    background-color: rgb(16, 16, 16);
+    color: white;
+    width: 60%;
+    border-color: white;
+    border-radius: 0;
+    height: 38px;
+  }
+  
+  /* Custom styles */
+  .form-control:focus {
+    background-color: rgb(16, 16, 16);
+    color: white;
+    box-shadow: none;
+    border-color: white;
+  }
+  
+  /* Optional: Adjust the appearance of the dropdown arrow */
+  select::-ms-expand {
+    display: none;
+  }
+  
+  .select-wrapper {
+    position: relative;
+  }
+  
+  .select-wrapper::after {
+    background-color: rgb(16, 16, 16);
+    color: white;
+    content: '\25BC'; /* Unicode character for down arrow */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #777;
+  }
+  
+  table tr td{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  a {
+    color:#616161;
+    text-decoration: none;
+  }
+  
+  /* Styles the link when hovered */
+  a:hover {
+    color:#616161;
+    text-decoration: none;
+  }
+  
+  /* Styles the link when it has been visited */
+  a:visited {
+    color:#616161;
+  }
+
+  .komentar{
+    border: 1px white solid;
+    padding: 1%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+
+  .paragrafKomentar{
+    display: inline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .paragrafDugme{
+    margin-left: 90%;
+    display: inline;
+  }
+
+  body{
+    background-color: rgb(16, 16, 16);
+  }
+
+
+  
